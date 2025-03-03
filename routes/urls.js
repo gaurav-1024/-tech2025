@@ -16,6 +16,7 @@ const upload = multer({ storage: storage });
 const {HomePage}=require("../controllers/HomePage")
 const {Login,Register}=require("../controllers/Login")
 const {UploadBooks}=require("../controllers/UploadBooks")
+const {fetchBooks}=require("../controllers/fetchBooks")
 let router=express.Router()
 
 router.get("/",HomePage)
@@ -25,6 +26,7 @@ router.get("/registerpage",(req,res)=>{
 router.post("/register",Register)
 router.post("/login",Login)
 router.post("/books",upload.single('files'),UploadBooks)
+router.get("/fetchbooks/:name",fetchBooks)
 
 module.exports={
     router,
