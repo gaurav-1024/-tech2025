@@ -7,9 +7,7 @@ async function Login(req,res){
     let data= await login.findOne({username:user,password:pass})
     if(data){
         req.session.userid=data._id
-        // res.send("you are loggeed")
         res.render("BookUpload")
-        // res.redirect("/studentDashbord")
     }
     else{
         req.session.error="Invalid username or password"
@@ -22,7 +20,7 @@ async function Login(req,res){
 async function Register(req,res){
     let {user,pass,name,urn,email}=req.body
     await login.create({username:user,password:pass,name:name,urn:urn,email:email})
-    res.send("done")
+    res.redirect("/")
 }
 
 module.exports={

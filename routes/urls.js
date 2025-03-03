@@ -27,6 +27,9 @@ router.post("/register",Register)
 router.post("/login",Login)
 router.post("/books",upload.single('files'),UploadBooks)
 router.get("/fetchbooks/:name",fetchBooks)
+router.get("/booksdetailspage",(req,res)=>{
+    res.render("UploadForm")
+})
 
 module.exports={
     router,
