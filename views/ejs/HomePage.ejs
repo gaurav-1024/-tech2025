@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <form action="/login"method="post">
-        username<input type="text" name="user">
-        password<input type="password" name="pass">
-        <button type="submit">click</button>
-    </form>
-    <h1>new user</h1>
-    <a href="/registerpage">Regester</a>
+    <div class="left">
+
+        <div class="midleft">
+
+            <div class="innerrect">
+                <img src="../images/girl.png" alt="" class="img1">
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="up">
+            <div class="logo"><img src="../images/logo.png" alt="" width="80%" height="60%"></div>
+            <div class="logoname">BookHive</div>
+        </div>
+        <div>
+            <form acion="/login" method="post" class="form1">
+                <div class="text1">Sign In</div>
+                <div class="form1">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Enter your password">
+                </div>
+                <div>
+                    <input type="submit" name="Sign In" value="Sign IN" class="loginbut">
+                </div>
+                <div class="text2">Dont have an account?</div>
+                <div>
+                    <a href="/registerpage" class="create">Create an Account</a>
+                </div>
+
+            </form>
+        </div>
+
 </body>
+
 </html>

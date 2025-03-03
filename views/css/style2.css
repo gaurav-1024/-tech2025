@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left {
+
+    width: 850px;
+    height: 100vh;
+
+
+    display: flex;
+    background-color: #C664FF;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.innerrect {
+
+    width: 641px;
+    height: 696px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: linear-gradient(160deg, rgba(255, 254, 254, 0.30) 13.24%, rgba(186, 184, 184, 0.30) 68.07%, rgba(72, 70, 70, 0.30) 101.84%);
+
+    backdrop-filter: blur(2px);
+}
+
+.img1 {
+    position: relative;
+    top: -55px;
+    height: 120%;
+    left: -15%;
+    width: 135%;
+}
+
+.right {
+    width: 850px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+
+
+
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+
+    height: 7%;
+    width: 30%;
+
+    align-items: center;
+    position: relative;
+    top: -21px;
+}
+
+.logo {
+    position: relative;
+    left: 10px;
+
+}
+
+.logoname {
+    color: #8C00DA;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text1 {
+    color: #8D1AEF;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.form1 input {
+    width: 400px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 2px solid #8D1AEF;
+
+
+}
+
+.loginbut {
+    border-radius: 40px;
+    border: 2px solid #8D1AEF;
+
+    background: #8D1AEF;
+
+    color: #FFF;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    /* 166.667% */
+}
+
+a {
+    color: #8C00DA;
+
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 166.667% */
+    letter-spacing: -0.48px;
+    text-align: center;
+
+}
+
+.text2{
+    color: #CF96EF;
+
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 166.667% */
+letter-spacing: -0.48px;
+}
+
+.create{
+    color: #8C00DA;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 200% */
+letter-spacing: -1.2px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
